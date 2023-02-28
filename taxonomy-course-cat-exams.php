@@ -1,14 +1,11 @@
 <?php 
 
 if ( !defined( 'ABSPATH' ) ) exit;
-
 // $redirect_course_cat_directory = vibe_get_option('redirect_course_cat_directory');
 // if(!empty($redirect_course_cat_directory)){
 // 	locate_template( array( 'course/index.php' ), true );	
 // 	exit;	
 // }
-
-
 get_header( vibe_get_header() ); ?>
 
 <style>
@@ -162,8 +159,6 @@ get_header( vibe_get_header() ); ?>
 		background: #ed4266 !important;
 		color: #fff !important;
 	}
-	
-
 </style>
 
 <section id="title">
@@ -194,7 +189,7 @@ get_header( vibe_get_header() ); ?>
                 <?php endif; ?>
 			</div>
 			<div class="col-md-9 col-sm-8">
-				<div class="content" id="mha-wrapper">
+			     <div class="content" id="mha-wrapper">
 					
 				<?php
 				$i = 1;
@@ -237,19 +232,11 @@ get_header( vibe_get_header() ); ?>
 				$i++;
 				endwhile;
 				pagination();
-
-		
 				endif;
-				
 				?>
-				
+				     
 				<script>
-
-
-
-					
 					function clickModal(arg){
-
 						const buttonId = document.getElementById(`${arg}`);
 						const title = buttonId.getAttribute("data-title");
 						const imgsrc = buttonId.getAttribute("data-imgel");
@@ -262,7 +249,6 @@ get_header( vibe_get_header() ); ?>
 						const modalPrice = document.getElementById('modal-price');
 						const modalProID = document.getElementById('mha-modal-addbox');
 						const modalBuy = document.getElementById('mha-modal-buy');
-						
 						
 						modalTitle.innerHTML = `<a href="${permalink}">${title}</a>`;
 						modalImg.innerHTML = `<img src="${imgsrc}"/>`;
@@ -309,9 +295,6 @@ get_header( vibe_get_header() ); ?>
 						getUrl = jQuery("#mha-modal-addbox a").attr('href', new_url);
 						getUrl2 = jQuery("#mha-modal-buy a").attr('href', new_url2);
 					});
-
-
-					
 				</script>
 				<div class="modal fade mha-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 					<div class="modal-dialog modal-dialog-centered" role="document">
@@ -343,9 +326,6 @@ get_header( vibe_get_header() ); ?>
 						</div>
 					</div>
 				</div>
-
-
-
 				</div>
 			</div>	
 			
