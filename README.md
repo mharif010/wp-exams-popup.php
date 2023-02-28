@@ -1,3 +1,3 @@
 # wp-exams-popup.php
 ### popup modal with dynamic content 
-![img](http://i.imgur.com/yourfilename.png)
+![img](https://github.com/mharif010/wp-exams-popup.php/blob/main/exams%20arhives.png)
